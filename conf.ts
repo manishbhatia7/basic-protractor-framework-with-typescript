@@ -16,7 +16,7 @@ export let config:Config={
     // Spec patterns are relative to the configuration file location passed
     // to protractor (in this example config.js).
     // They may include glob patterns.
-    specs: ['spec.js'],
+    specs: ['spec1.js'],
     onPrepare()
     {
         browser.driver.manage().window().maximize();

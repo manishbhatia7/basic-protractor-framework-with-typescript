@@ -8,31 +8,35 @@ describe("Protractor Demo app",()=>
            var secondNumber=element(by.model('second'));
            var goButton=element(by.id("gobutton"));
            var latestResult=element(by.binding('latest'));
+           var history=element.all(by.repeater('result in memory'));
 
+        function add(a,b)
+        {
+            firstNumber.sendKeys(a);
+            secondNumber.sendKeys(b);
+            goButton.click();
+        }
         beforeEach(function()
         {
             browser.get("https://juliemr.github.io/protractor-demo/")
 
         })
 
-        it("Should have a title",async()=>
-        {
-           expect(browser.getTitle()).toEqual('Super Calculator');
+        it('add two numbers',()=>{
+            add(1,2);
+            add(3,4);
+            expect(history.count()).toEqual(2);
+
+            add(5,6);
+            expect(history.count()).toEqual(3);
+            expect(history.last().getText()).toContain(' 1 + 2');
+            
 
         })
-        it('should have one and two',async()=>
-        {
-            firstNumber.sendKeys('1');
-            secondNumber.sendKeys('2');
-            goButton.click();
-            expect(latestResult.getText()).toEqual('3');            
-        })
-        it('should read the value from an input',async()=>
-        {
-            firstNumber.sendKeys('1');
-            expect(firstNumber.getAttribute('value')).toEqual('1');
+       
 
-        })
+
+
         
     });
     

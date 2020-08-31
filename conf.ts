@@ -5,9 +5,13 @@ export let config:Config={
     // The address of a running selenium server.
    directConnect:true,
         // Capabilities to be passed to the webdriver instance.
-    capabilities: {
+    multiCapabilities: [{
         browserName: 'chrome'
     },
+    {
+        browserName:'firefox'
+
+    }],
 
     // Spec patterns are relative to the configuration file location passed
     // to protractor (in this example config.js).

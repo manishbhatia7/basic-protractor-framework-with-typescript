@@ -1,23 +1,38 @@
-import {browser, By,element} from "protractor";
+import {browser, by,element} from "protractor";
 
 
 
-describe("Chain local ors demo",()=>
+describe("Protractor Demo app",()=>
     {
-        it("Open calculator website",async()=>
+           var firstNumber=element(by.model('first'));
+           var secondNumber=element(by.model('second'));
+           var goButton=element(by.id("gobutton"));
+           var latestResult=element(by.binding('latest'));
+
+        beforeEach(function()
         {
-           browser.get("https://juliemr.github.io/protractor-demo/");
+            browser.get("https://juliemr.github.io/protractor-demo/")
 
         })
-        it("Open Angular link",async()=>
+
+        it("Should have a title",async()=>
         {
-            browser.get("https://angularjs.org/");
-            
+           expect(browser.getTitle()).toEqual('Super Calculator');
+
         })
+        it('should have one and two',async()=>
+        {
+            firstNumber.sendKeys('1');
+            secondNumber.sendKeys('2');
+            goButton.click();
+            expect(latestResult.getText()).toEqual('3');            
+        })
+        it('should read the value from an input',async()=>
+        {
+            firstNumber.sendKeys('1');
+            expect(firstNumber.getAttribute('value')).toEqual('1');
 
-
-
-
-
-    }
-)
+        })
+        
+    });
+    

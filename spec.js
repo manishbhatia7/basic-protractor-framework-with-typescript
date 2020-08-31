@@ -37,16 +37,33 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 var protractor_1 = require("protractor");
-describe("Chain local ors demo", function () {
-    it("Open calculator website", function () { return __awaiter(void 0, void 0, void 0, function () {
+describe("Protractor Demo app", function () {
+    var firstNumber = protractor_1.element(protractor_1.by.model('first'));
+    var secondNumber = protractor_1.element(protractor_1.by.model('second'));
+    var goButton = protractor_1.element(protractor_1.by.id("gobutton"));
+    var latestResult = protractor_1.element(protractor_1.by.binding('latest'));
+    beforeEach(function () {
+        protractor_1.browser.get("https://juliemr.github.io/protractor-demo/");
+    });
+    it("Should have a title", function () { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            protractor_1.browser.get("https://juliemr.github.io/protractor-demo/");
+            expect(protractor_1.browser.getTitle()).toEqual('Super Calculator');
             return [2 /*return*/];
         });
     }); });
-    it("Open Angular link", function () { return __awaiter(void 0, void 0, void 0, function () {
+    it('should have one and two', function () { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            protractor_1.browser.get("https://angularjs.org/");
+            firstNumber.sendKeys('1');
+            secondNumber.sendKeys('2');
+            goButton.click();
+            expect(latestResult.getText()).toEqual('3');
+            return [2 /*return*/];
+        });
+    }); });
+    it('should read the value from an input', function () { return __awaiter(void 0, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            firstNumber.sendKeys('1');
+            expect(firstNumber.getAttribute('value')).toEqual('1');
             return [2 /*return*/];
         });
     }); });

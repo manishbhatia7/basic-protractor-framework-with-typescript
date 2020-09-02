@@ -5,18 +5,10 @@ export let config:Config={
     // The address of a running selenium server.
    directConnect:true,
         // Capabilities to be passed to the webdriver instance.
-    multiCapabilities: [{
-        browserName: 'chrome'
-    },
-    {
-        browserName:'firefox'
-
-    }],
-
-    // Spec patterns are relative to the configuration file location passed
+      // Spec patterns are relative to the configuration file location passed
     // to protractor (in this example config.js).
     // They may include glob patterns.
-    specs: ['spec1.js'],
+    specs: ['login.js'],
     onPrepare()
     {
         browser.driver.manage().window().maximize();
@@ -25,6 +17,8 @@ export let config:Config={
 
     // Options to be passed to Jasmine-node.
     jasmineNodeOpts: {
-        showColors: true, // Use colors in the command line report.
+        showColors: true,
+       allScriptsTimeout:600000,
+       defaultTimeoutInterval:600000,
     }
 };

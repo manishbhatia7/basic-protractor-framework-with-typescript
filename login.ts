@@ -32,6 +32,8 @@ describe('Airline Login',()=>{
         browser.sleep(3000);
         element(by.id('firstName')).sendKeys('Jagadeesh');
         element(by.id('lastName')).sendKeys('Kalagi');
+        element(by.id('employeeId')).clear();
+        element(by.id('employeeId')).sendKeys('001234');
         var dropdown=element(by.xpath("//div[@class='select-wrapper initialized']"));
         dropdown.click();
         var child_dropdown=dropdown.all(by.className('dropdown-content select-dropdown'));
@@ -59,8 +61,39 @@ describe('Airline Login',()=>{
             element(by.xpath("//span[contains(text(),'Global Admin')]")).click();
             browser.driver.sleep(500);  
         })
-        browser.sleep(5000);
+        element(by.id('systemUserSaveBtn')).click();
+        
     })  
+    it('Add Employee Details Wizard',()=>
+    {
+        element(by.className('material-icons action-icon date-picker-open-icon')).click();
+        browser.sleep(5000);
+        var month_parent=element(by.className('select-wrapper picker__select--month'));
+        month_parent.click();
+        var month_child=month_parent.all(by.className('dropdown-content select-dropdown'));
+        month_child.each(function(){
+            browser.driver.sleep(500);
+            element(by.xpath("//span[contains(text(),'January')]")).click();
+            browser.driver.sleep(500);
+        })
+        var year_parent=element(by.className('select-wrapper picker__select--year'));
+        var year_child=year_parent.all(by.className('dropdown-content select-dropdown'));
+        year_parent.click();
+        year_child.each(function(){
+            browser.driver.sleep(500);
+            element(by.xpath("//span[contains(text(),'1981')]")).click();
+            browser.driver.sleep(500);
+        })
+        var table=element(by.xpath("(//table[@class='picker__table'])[1]"));
+        var table_body=table.element(by.tagName('tbody'));
+        var row=table_body.all(by.tagName('td'));
+        row.each(function(){
+            browser.driver.sleep(500);
+            element(by.xpath("//div[contains(text(),'2')]")).click();
+            browser.driver.sleep(500);
+        })
+
+    })
         
       
         

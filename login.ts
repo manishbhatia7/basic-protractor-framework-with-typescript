@@ -31,10 +31,10 @@ describe('Airline Login',()=>{
     it('add employee',()=>{
         element(by.id('addEmployeeButton')).click();
         browser.sleep(3000);
-        element(by.id('firstName')).sendKeys('Jagadeesh');
+        element(by.id('firstName')).sendKeys('Vikram');
         element(by.id('lastName')).sendKeys('Kalagi');
         element(by.id('employeeId')).clear();
-        element(by.id('employeeId')).sendKeys('001234');
+        element(by.id('employeeId')).sendKeys('001235');
         var dropdown=element(by.xpath("//div[@class='select-wrapper initialized']"));
         dropdown.click();
         var child_dropdown=dropdown.all(by.className('dropdown-content select-dropdown'));
@@ -109,7 +109,8 @@ describe('Airline Login',()=>{
        })
        
        var text=element(by.xpath("//label[contains(text(),'Include Contract Details')]"));
-       //expect(text.isSelected()).toBe(true);
+       expect(text.getText()).toEqual('Include Contract Details');
+       expect(element(by.xpath("//input[@type='checkbox']")).isSelected()).toBe(true);
        var div_Region_parent=element(by.id('9_inputfileddiv'));
        div_Region_parent.click();
        var div_Region_child=div_Region_parent.element(by.className('select-wrapper initialized'));

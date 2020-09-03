@@ -22,10 +22,10 @@ describe('Airline Login', function () {
     it('add employee', function () {
         protractor_1.element(protractor_1.by.id('addEmployeeButton')).click();
         protractor_1.browser.sleep(3000);
-        protractor_1.element(protractor_1.by.id('firstName')).sendKeys('Jagadeesh');
+        protractor_1.element(protractor_1.by.id('firstName')).sendKeys('Vikram');
         protractor_1.element(protractor_1.by.id('lastName')).sendKeys('Kalagi');
         protractor_1.element(protractor_1.by.id('employeeId')).clear();
-        protractor_1.element(protractor_1.by.id('employeeId')).sendKeys('001234');
+        protractor_1.element(protractor_1.by.id('employeeId')).sendKeys('001235');
         var dropdown = protractor_1.element(protractor_1.by.xpath("//div[@class='select-wrapper initialized']"));
         dropdown.click();
         var child_dropdown = dropdown.all(protractor_1.by.className('dropdown-content select-dropdown'));
@@ -94,7 +94,8 @@ describe('Airline Login', function () {
             protractor_1.browser.driver.sleep(500);
         });
         var text = protractor_1.element(protractor_1.by.xpath("//label[contains(text(),'Include Contract Details')]"));
-        //expect(text.isSelected()).toBe(true);
+        expect(text.getText()).toEqual('Include Contract Details');
+        expect(protractor_1.element(protractor_1.by.xpath("//input[@type='checkbox']")).isSelected()).toBe(true);
         var div_Region_parent = protractor_1.element(protractor_1.by.id('9_inputfileddiv'));
         div_Region_parent.click();
         var div_Region_child = div_Region_parent.element(protractor_1.by.className('select-wrapper initialized'));

@@ -1,5 +1,6 @@
 import {browser,element,by,$} from "protractor";
 import { monitorEventLoopDelay } from "perf_hooks";
+import { DriverProvider } from "protractor/built/driverProviders";
 
 
 describe('Airline Login',()=>{
@@ -84,14 +85,76 @@ describe('Airline Login',()=>{
             element(by.xpath("//span[contains(text(),'1981')]")).click();
             browser.driver.sleep(500);
         })
-        var table=element(by.xpath("(//table[@class='picker__table'])[1]"));
-        var table_body=table.element(by.tagName('tbody'));
-        var row=table_body.all(by.tagName('td'));
-        row.each(function(){
+        element(by.xpath("(//div[@class='picker__day picker__day--infocus'])[2]")).click();
+        browser.sleep(5000);
+        expect(element(by.className('wrapped-word')).getText()).toBe('Important');
+        var parent_blood=element(by.id('1_inputfileddiv'));
+        parent_blood.click();
+        var main_class=parent_blood.element(by.className('select-wrapper initialized'));
+        var child_blood=main_class.all(by.className('dropdown-content select-dropdown'));
+        child_blood.each(function(){
             browser.driver.sleep(500);
-            element(by.xpath("//div[contains(text(),'2')]")).click();
-            browser.driver.sleep(500);
+            element(by.xpath("//span[contains(text(),'AB')]")).click();
+            browser.driver.sleep(500);  
         })
+        var hobby=element(by.id('5'));
+        hobby.click();
+        hobby.sendKeys('Cycling,Painting');
+        var btn_group=element.all(by.id('wizard-nav-button-section'));
+        btn_group.each(function()
+        {
+            browser.driver.sleep(500);
+           element(by.xpath("(//button[@class='btn waves-effect waves-light right'])[1]")).click();
+            browser.driver.sleep(500);  
+       })
+       
+       var text=element(by.xpath("//label[contains(text(),'Include Contract Details')]"));
+       //expect(text.isSelected()).toBe(true);
+       var div_Region_parent=element(by.id('9_inputfileddiv'));
+       div_Region_parent.click();
+       var div_Region_child=div_Region_parent.element(by.className('select-wrapper initialized'));
+       var main_Region_class=div_Region_child.all(by.className('dropdown-content select-dropdown'));
+       main_Region_class.each(function()
+       {
+           browser.driver.sleep(500);
+           element(by.xpath("//span[contains(text(),'Region-3')]")).click();
+           browser.driver.sleep(500);
+
+       })
+
+       var div_FTE_parent=element(by.id('10_inputfileddiv'));
+       div_FTE_parent.click();
+       var div_FTE_child=div_FTE_parent.element(by.className('select-wrapper initialized'));
+       var main_Region_div_class=div_FTE_child.all(by.className('dropdown-content select-dropdown'));
+       main_Region_div_class.each(function()
+       {
+           browser.driver.sleep(500);
+           element(by.xpath("//span[contains(text(),'0.75')]")).click();
+           browser.driver.sleep(500);
+
+       })
+
+       var div_Department_parent=element(by.id('11_inputfileddiv'));
+       div_Department_parent.click();
+       var div_Department_child=div_Department_parent.element(by.className('select-wrapper initialized'));
+       var main_Department_div_class=div_Department_child.all(by.className('dropdown-content select-dropdown'));
+       main_Department_div_class.each(function()
+       {
+           browser.driver.sleep(500);
+           element(by.xpath("//span[contains(text(),'Sub unit-1')]")).click();
+           browser.driver.sleep(500);
+       })
+       var parent_button_class=element.all(by.className('row schema-form-section form-buttons'));
+           parent_button_class.each(function(){
+           browser.driver.sleep(500);
+           element(by.xpath("//button[@class='btn waves-effect waves-light right']")).click();
+           browser.driver.sleep(500);
+       })
+       browser.sleep(7000);
+
+            
+
+
 
     })
         

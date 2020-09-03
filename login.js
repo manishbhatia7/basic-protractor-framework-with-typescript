@@ -72,13 +72,62 @@ describe('Airline Login', function () {
             protractor_1.element(protractor_1.by.xpath("//span[contains(text(),'1981')]")).click();
             protractor_1.browser.driver.sleep(500);
         });
-        var table = protractor_1.element(protractor_1.by.xpath("(//table[@class='picker__table'])[1]"));
-        var table_body = table.element(protractor_1.by.tagName('tbody'));
-        var row = table_body.all(protractor_1.by.tagName('td'));
-        row.each(function () {
+        protractor_1.element(protractor_1.by.xpath("(//div[@class='picker__day picker__day--infocus'])[2]")).click();
+        protractor_1.browser.sleep(5000);
+        expect(protractor_1.element(protractor_1.by.className('wrapped-word')).getText()).toBe('Important');
+        var parent_blood = protractor_1.element(protractor_1.by.id('1_inputfileddiv'));
+        parent_blood.click();
+        var main_class = parent_blood.element(protractor_1.by.className('select-wrapper initialized'));
+        var child_blood = main_class.all(protractor_1.by.className('dropdown-content select-dropdown'));
+        child_blood.each(function () {
             protractor_1.browser.driver.sleep(500);
-            protractor_1.element(protractor_1.by.xpath("//div[contains(text(),'2')]")).click();
+            protractor_1.element(protractor_1.by.xpath("//span[contains(text(),'AB')]")).click();
             protractor_1.browser.driver.sleep(500);
         });
+        var hobby = protractor_1.element(protractor_1.by.id('5'));
+        hobby.click();
+        hobby.sendKeys('Cycling,Painting');
+        var btn_group = protractor_1.element.all(protractor_1.by.id('wizard-nav-button-section'));
+        btn_group.each(function () {
+            protractor_1.browser.driver.sleep(500);
+            protractor_1.element(protractor_1.by.xpath("(//button[@class='btn waves-effect waves-light right'])[1]")).click();
+            protractor_1.browser.driver.sleep(500);
+        });
+        var text = protractor_1.element(protractor_1.by.xpath("//label[contains(text(),'Include Contract Details')]"));
+        //expect(text.isSelected()).toBe(true);
+        var div_Region_parent = protractor_1.element(protractor_1.by.id('9_inputfileddiv'));
+        div_Region_parent.click();
+        var div_Region_child = div_Region_parent.element(protractor_1.by.className('select-wrapper initialized'));
+        var main_Region_class = div_Region_child.all(protractor_1.by.className('dropdown-content select-dropdown'));
+        main_Region_class.each(function () {
+            protractor_1.browser.driver.sleep(500);
+            protractor_1.element(protractor_1.by.xpath("//span[contains(text(),'Region-3')]")).click();
+            protractor_1.browser.driver.sleep(500);
+        });
+        var div_FTE_parent = protractor_1.element(protractor_1.by.id('10_inputfileddiv'));
+        div_FTE_parent.click();
+        var div_FTE_child = div_FTE_parent.element(protractor_1.by.className('select-wrapper initialized'));
+        var main_Region_div_class = div_FTE_child.all(protractor_1.by.className('dropdown-content select-dropdown'));
+        main_Region_div_class.each(function () {
+            protractor_1.browser.driver.sleep(500);
+            protractor_1.element(protractor_1.by.xpath("//span[contains(text(),'0.75')]")).click();
+            protractor_1.browser.driver.sleep(500);
+        });
+        var div_Department_parent = protractor_1.element(protractor_1.by.id('11_inputfileddiv'));
+        div_Department_parent.click();
+        var div_Department_child = div_Department_parent.element(protractor_1.by.className('select-wrapper initialized'));
+        var main_Department_div_class = div_Department_child.all(protractor_1.by.className('dropdown-content select-dropdown'));
+        main_Department_div_class.each(function () {
+            protractor_1.browser.driver.sleep(500);
+            protractor_1.element(protractor_1.by.xpath("//span[contains(text(),'Sub unit-1')]")).click();
+            protractor_1.browser.driver.sleep(500);
+        });
+        var parent_button_class = protractor_1.element.all(protractor_1.by.className('row schema-form-section form-buttons'));
+        parent_button_class.each(function () {
+            protractor_1.browser.driver.sleep(500);
+            protractor_1.element(protractor_1.by.xpath("//button[@class='btn waves-effect waves-light right']")).click();
+            protractor_1.browser.driver.sleep(500);
+        });
+        protractor_1.browser.sleep(7000);
     });
 });

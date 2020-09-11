@@ -1,0 +1,81 @@
+{
+  "uid" : "bd66bba952bab810",
+  "name" : "Add Employee Details Wizard",
+  "fullName" : "Airline Login.Add Employee Details Wizard",
+  "historyId" : "a3454561149b70386c1c44081203f337",
+  "time" : {
+    "start" : 1599811486359,
+    "stop" : 1599811535168,
+    "duration" : 48809
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testClass",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testMethod",
+    "value" : "Add Employee Details Wizard"
+  }, {
+    "name" : "package",
+    "value" : "Airline Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d9ae09e0792475b3",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, .material-icons.action-icon.date-picker-open-icon)",
+      "time" : {
+        "start" : 1599811373534,
+        "stop" : 1599811374063,
+        "duration" : 529
+      }
+    }, {
+      "uid" : "26b5710fb8e5f89f",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, .material-icons.action-icon.date-picker-open-icon)",
+      "time" : {
+        "start" : 1599811118809,
+        "stop" : 1599811119350,
+        "duration" : 541
+      }
+    }, {
+      "uid" : "58050779f5f85176",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, .material-icons.action-icon.date-picker-open-icon)",
+      "time" : {
+        "start" : 1599810996584,
+        "stop" : 1599810997149,
+        "duration" : 565
+      }
+    }, {
+      "uid" : "d8d41dce24b15c14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599808176596,
+        "stop" : 1599808232061,
+        "duration" : 55465
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bd66bba952bab810.json",
+  "parameterValues" : [ ]
+}

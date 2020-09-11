@@ -1,0 +1,44 @@
+{
+  "uid" : "9cba4b213d1a5a63",
+  "name" : "dashboard click",
+  "fullName" : "Airline Login.dashboard click",
+  "historyId" : "bc640373ea42bb7ee75a025dbf3a0fe6",
+  "time" : {
+    "start" : 1599808149095,
+    "stop" : 1599808151137,
+    "duration" : 2042
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testClass",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testMethod",
+    "value" : "dashboard click"
+  }, {
+    "name" : "package",
+    "value" : "Airline Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9cba4b213d1a5a63.json",
+  "parameterValues" : [ ]
+}

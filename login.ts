@@ -31,10 +31,10 @@ describe('Airline Login',()=>{
     it('add employee',()=>{
         element(by.id('addEmployeeButton')).click();
         browser.sleep(3000);
-        element(by.id('firstName')).sendKeys('Vikram');
+        element(by.id('firstName')).sendKeys('Gulshan');
         element(by.id('lastName')).sendKeys('Kalagi');
         element(by.id('employeeId')).clear();
-        element(by.id('employeeId')).sendKeys('001235');
+        element(by.id('employeeId')).sendKeys('001238');
         var dropdown=element(by.xpath("//div[@class='select-wrapper initialized']"));
         dropdown.click();
         var child_dropdown=dropdown.all(by.className('dropdown-content select-dropdown'));
@@ -50,9 +50,9 @@ describe('Airline Login',()=>{
         expect(element(by.xpath("//label[contains(text(),'Create Login Details')]")).isSelected()).toBe(false);
         var checkbox=element(by.xpath("//label[contains(text(),'Create Login Details')]"));
         checkbox.click();
-        element(by.id('username')).sendKeys('Jagadeesh');
-        element(by.id('password')).sendKeys('Testing123');
-        element(by.id('confirmPassword')).sendKeys('Testing123');
+        element(by.id('username')).sendKeys('Gulshan');
+        element(by.id('password')).sendKeys('Testing1234');
+        element(by.id('confirmPassword')).sendKeys('Testing1234');
         var parent_role=element(by.id('adminRoleId_inputfileddiv'));
         var Role=parent_role.element(by.className('select-wrapper initialized'));
         Role.click();

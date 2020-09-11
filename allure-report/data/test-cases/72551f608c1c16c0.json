@@ -1,0 +1,44 @@
+{
+  "uid" : "72551f608c1c16c0",
+  "name" : "Login functionality",
+  "fullName" : "Airline Login.Login functionality",
+  "historyId" : "403eb8142b029bd293cdbd73c1b0b996",
+  "time" : {
+    "start" : 1599811077873,
+    "stop" : 1599811093358,
+    "duration" : 15485
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testClass",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testMethod",
+    "value" : "Login functionality"
+  }, {
+    "name" : "package",
+    "value" : "Airline Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "72551f608c1c16c0.json",
+  "parameterValues" : [ ]
+}

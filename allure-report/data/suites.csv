@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 11 13:34:38 IST 2020","Fri Sep 11 13:34:46 IST 2020","7650","","Airline Login","","Airline Login","Add User Details","Add User Details",""
+"passed","Fri Sep 11 13:34:19 IST 2020","Fri Sep 11 13:34:38 IST 2020","18869","","Airline Login","","Airline Login","add employee","add employee",""
+"passed","Fri Sep 11 13:34:04 IST 2020","Fri Sep 11 13:34:18 IST 2020","13421","","Airline Login","","Airline Login","Login functionality","Login functionality",""
+"passed","Fri Sep 11 13:34:18 IST 2020","Fri Sep 11 13:34:19 IST 2020","1731","","Airline Login","","Airline Login","dashboard click","dashboard click",""
+"passed","Fri Sep 11 13:34:46 IST 2020","Fri Sep 11 13:35:35 IST 2020","48809","","Airline Login","","Airline Login","Add Employee Details Wizard","Add Employee Details Wizard",""

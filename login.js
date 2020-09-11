@@ -22,10 +22,10 @@ describe('Airline Login', function () {
     it('add employee', function () {
         protractor_1.element(protractor_1.by.id('addEmployeeButton')).click();
         protractor_1.browser.sleep(3000);
-        protractor_1.element(protractor_1.by.id('firstName')).sendKeys('Vikram');
+        protractor_1.element(protractor_1.by.id('firstName')).sendKeys('Gulshan');
         protractor_1.element(protractor_1.by.id('lastName')).sendKeys('Kalagi');
         protractor_1.element(protractor_1.by.id('employeeId')).clear();
-        protractor_1.element(protractor_1.by.id('employeeId')).sendKeys('001235');
+        protractor_1.element(protractor_1.by.id('employeeId')).sendKeys('001238');
         var dropdown = protractor_1.element(protractor_1.by.xpath("//div[@class='select-wrapper initialized']"));
         dropdown.click();
         var child_dropdown = dropdown.all(protractor_1.by.className('dropdown-content select-dropdown'));
@@ -39,9 +39,9 @@ describe('Airline Login', function () {
         expect(protractor_1.element(protractor_1.by.xpath("//label[contains(text(),'Create Login Details')]")).isSelected()).toBe(false);
         var checkbox = protractor_1.element(protractor_1.by.xpath("//label[contains(text(),'Create Login Details')]"));
         checkbox.click();
-        protractor_1.element(protractor_1.by.id('username')).sendKeys('Jagadeesh');
-        protractor_1.element(protractor_1.by.id('password')).sendKeys('Testing123');
-        protractor_1.element(protractor_1.by.id('confirmPassword')).sendKeys('Testing123');
+        protractor_1.element(protractor_1.by.id('username')).sendKeys('Gulshan');
+        protractor_1.element(protractor_1.by.id('password')).sendKeys('Testing1234');
+        protractor_1.element(protractor_1.by.id('confirmPassword')).sendKeys('Testing1234');
         var parent_role = protractor_1.element(protractor_1.by.id('adminRoleId_inputfileddiv'));
         var Role = parent_role.element(protractor_1.by.className('select-wrapper initialized'));
         Role.click();

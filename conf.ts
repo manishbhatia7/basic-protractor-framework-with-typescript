@@ -1,18 +1,23 @@
 import {Config, browser} from "protractor";
 
 
-export let config:Config={
+exports.config={
     // The address of a running selenium server.
-   directConnect:true,
+   framework:'jasmine2',
+    directConnect:true,
         // Capabilities to be passed to the webdriver instance.
       // Spec patterns are relative to the configuration file location passed
     // to protractor (in this example config.js).
     // They may include glob patterns.
     specs: ['login.js'],
-    onPrepare()
+    onPrepare:function()
     {
         browser.driver.manage().window().maximize();
-
+        var AllureReporter = require('jasmine-allure-reporter');
+    jasmine.getEnv().addReporter(new AllureReporter({
+      resultsDir: 'allure-results'
+    }));
+        
     },
 
     // Options to be passed to Jasmine-node.

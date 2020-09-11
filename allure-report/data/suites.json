@@ -1,0 +1,74 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Airline Login",
+    "children" : [ {
+      "name" : "Login functionality",
+      "uid" : "d1581a33278dba4c",
+      "parentUid" : "0a06be218724eccdf3df996dedeaeeb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599811444686,
+        "stop" : 1599811458107,
+        "duration" : 13421
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "dashboard click",
+      "uid" : "a706d1df94f44a66",
+      "parentUid" : "0a06be218724eccdf3df996dedeaeeb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599811458107,
+        "stop" : 1599811459838,
+        "duration" : 1731
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "add employee",
+      "uid" : "725a1ce99bb17225",
+      "parentUid" : "0a06be218724eccdf3df996dedeaeeb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599811459838,
+        "stop" : 1599811478707,
+        "duration" : 18869
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Add User Details",
+      "uid" : "c29427d709bda655",
+      "parentUid" : "0a06be218724eccdf3df996dedeaeeb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599811478707,
+        "stop" : 1599811486357,
+        "duration" : 7650
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Add Employee Details Wizard",
+      "uid" : "bd66bba952bab810",
+      "parentUid" : "0a06be218724eccdf3df996dedeaeeb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599811486359,
+        "stop" : 1599811535168,
+        "duration" : 48809
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0a06be218724eccdf3df996dedeaeeb4"
+  } ]
+}

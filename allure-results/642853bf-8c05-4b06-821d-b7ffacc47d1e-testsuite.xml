@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599808133116' stop='1599808232064'>
+    <name>Airline Login</name>
+    <title>Airline Login</title>
+    <test-cases>
+        <test-case start='1599808133116' status='passed' stop='1599808149095'>
+            <name>Login functionality</name>
+            <title>Login functionality</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1599808149095' status='passed' stop='1599808151137'>
+            <name>dashboard click</name>
+            <title>dashboard click</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1599808151138' status='passed' stop='1599808168526'>
+            <name>add employee</name>
+            <title>add employee</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1599808168526' status='passed' stop='1599808176596'>
+            <name>Add User Details</name>
+            <title>Add User Details</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1599808176596' status='passed' stop='1599808232061'>
+            <name>Add Employee Details Wizard</name>
+            <title>Add Employee Details Wizard</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

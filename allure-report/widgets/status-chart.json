@@ -1,0 +1,51 @@
+[ {
+  "uid" : "c29427d709bda655",
+  "name" : "Add User Details",
+  "time" : {
+    "start" : 1599811478707,
+    "stop" : 1599811486357,
+    "duration" : 7650
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "725a1ce99bb17225",
+  "name" : "add employee",
+  "time" : {
+    "start" : 1599811459838,
+    "stop" : 1599811478707,
+    "duration" : 18869
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1581a33278dba4c",
+  "name" : "Login functionality",
+  "time" : {
+    "start" : 1599811444686,
+    "stop" : 1599811458107,
+    "duration" : 13421
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a706d1df94f44a66",
+  "name" : "dashboard click",
+  "time" : {
+    "start" : 1599811458107,
+    "stop" : 1599811459838,
+    "duration" : 1731
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd66bba952bab810",
+  "name" : "Add Employee Details Wizard",
+  "time" : {
+    "start" : 1599811486359,
+    "stop" : 1599811535168,
+    "duration" : 48809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

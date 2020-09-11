@@ -1,0 +1,44 @@
+{
+  "uid" : "15263db154c4ff86",
+  "name" : "add employee",
+  "fullName" : "Airline Login.add employee",
+  "historyId" : "fc7866fef28fa196f1f77f202ea3fd37",
+  "time" : {
+    "start" : 1599811347629,
+    "stop" : 1599811367103,
+    "duration" : 19474
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testClass",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testMethod",
+    "value" : "add employee"
+  }, {
+    "name" : "package",
+    "value" : "Airline Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "15263db154c4ff86.json",
+  "parameterValues" : [ ]
+}

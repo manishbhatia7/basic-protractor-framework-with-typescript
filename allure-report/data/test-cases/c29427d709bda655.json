@@ -1,0 +1,78 @@
+{
+  "uid" : "c29427d709bda655",
+  "name" : "Add User Details",
+  "fullName" : "Airline Login.Add User Details",
+  "historyId" : "dff3ed4be3f0b34aed537531cec26a2f",
+  "time" : {
+    "start" : 1599811478707,
+    "stop" : 1599811486357,
+    "duration" : 7650
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testClass",
+    "value" : "Airline Login"
+  }, {
+    "name" : "testMethod",
+    "value" : "Add User Details"
+  }, {
+    "name" : "package",
+    "value" : "Airline Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7c61371485c12a80",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599811367103,
+        "stop" : 1599811373534,
+        "duration" : 6431
+      }
+    }, {
+      "uid" : "cb88a8746d600a72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599811112417,
+        "stop" : 1599811118809,
+        "duration" : 6392
+      }
+    }, {
+      "uid" : "aaf6da7a55399627",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599810987917,
+        "stop" : 1599810996584,
+        "duration" : 8667
+      }
+    }, {
+      "uid" : "de40f0e8d4b7d2e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599808168526,
+        "stop" : 1599808176596,
+        "duration" : 8070
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c29427d709bda655.json",
+  "parameterValues" : [ ]
+}
